@@ -1,14 +1,19 @@
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-"behave mswin
 
 " autocmd BufRead * execute "chdir ".escape(expand("%:p:h"), ' ')
 " set autochdir
 
 syntax on
+filetype on
+
+set tabstop=4 shiftwidth=4
+set expandtab
+
+" show tabs
+set list listchars=trail:.,tab:>\ 
+
 set hidden
-set tabstop=4 shiftwidth=4 expandtab
 set number title ruler mouse=a
 
 set nobackup
@@ -22,11 +27,8 @@ set nostartofline linebreak
 set whichwrap=[,]
 set showcmd
 set cmdheight=2
-filetype on
 " how is it working?
 set confirm
-
-set list listchars=trail:.,tab:>\ 
 
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
