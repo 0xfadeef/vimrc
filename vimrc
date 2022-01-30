@@ -17,6 +17,7 @@ set title
 set ruler
 set number
 set showcmd cmdheight=2
+set wildmenu
 set confirm
 
 " linebreak is no-op if nowrap
