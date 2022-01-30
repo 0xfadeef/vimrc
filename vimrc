@@ -42,6 +42,12 @@ set encoding=utf-8
 set fileencodings=utf-8,cp1251
 "set fileformats=dos
 
+
+
+" fix Python indent after open bracket
+let g:pyindent_open_paren = 'shiftwidth()'
+
+
 " ShowMarks
 let showmarks_enable=1
 let showmarks_include="abcdefghijklmnopqrstuvwxyz"
