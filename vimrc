@@ -19,6 +19,12 @@ set number
 set showcmd cmdheight=2
 set confirm
 
+" linebreak is no-op if nowrap
+set nowrap linebreak
+set whichwrap=[,]
+set backspace=indent,eol,start
+set nostartofline
+
 set hidden
 set mouse=a
 
@@ -28,10 +34,6 @@ set noswapfile
 set noundofile
 
 set hlsearch incsearch
-set nostartofline linebreak
-"nowrap
-set whichwrap=[,]
-" how is it working?
 
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
