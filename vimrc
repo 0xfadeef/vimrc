@@ -32,9 +32,8 @@ set nostartofline
 set hidden
 set mouse=a
 
-set nobackup
-set nowritebackup
-set noswapfile
+set nobackup writebackup
+set swapfile
 set noundofile
 
 set hlsearch incsearch
