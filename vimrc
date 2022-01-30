@@ -20,6 +20,9 @@ set showcmd cmdheight=2
 set wildmenu
 set confirm
 
+set history=200
+set undolevels=1000
+
 " linebreak is no-op if nowrap
 set nowrap linebreak
 set whichwrap=[,]
