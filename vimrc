@@ -90,16 +90,6 @@ nmap <F8> :nohlsearch<cr>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-map! <F1> <Nop>
-map! <F2> <Nop>
-map! <F3> <Nop>
-map! <F4> <Nop>
-map! <F5> <Nop>
-map! <F6> <Nop>
-map! <F7> <Nop>
-map! <F8> <Nop>
-map! <F9> <Nop>
-
 " Macro
 let @q='x4i j'
 
