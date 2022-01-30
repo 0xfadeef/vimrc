@@ -13,8 +13,14 @@ set expandtab
 " show tabs
 set list listchars=trail:.,tab:>\ 
 
+set title
+set ruler
+set number
+set showcmd cmdheight=2
+set confirm
+
 set hidden
-set number title ruler mouse=a
+set mouse=a
 
 set nobackup
 set nowritebackup
@@ -25,10 +31,7 @@ set hlsearch incsearch
 set nostartofline linebreak
 "nowrap
 set whichwrap=[,]
-set showcmd
-set cmdheight=2
 " how is it working?
-set confirm
 
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
