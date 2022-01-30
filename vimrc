@@ -90,9 +90,6 @@ nmap <F8> :nohlsearch<cr>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" Macro
-let @q='x4i j'
-
 set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
