@@ -48,10 +48,9 @@ set fileencodings=utf-8,cp1251
 let g:pyindent_open_paren = 'shiftwidth()'
 
 
-" ShowMarks
-let showmarks_enable=1
-let showmarks_include="abcdefghijklmnopqrstuvwxyz"
-"let showmarks_hlline_upper=1
+" ShowMarks config
+let g:showmarks_ignore_type="mpq"
+
 
 " /* I don't use ctags on mac */
 " taglist
