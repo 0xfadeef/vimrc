@@ -27,6 +27,7 @@ set undolevels=1000
 set nowrap linebreak
 set whichwrap=[,]
 set backspace=indent,eol,start
+set scrolloff=5
 set nostartofline
 
 set hidden
