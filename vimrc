@@ -44,6 +44,12 @@ set fileencodings=utf-8,cp1251
 "set fileformats=dos
 
 
+if has("gui_running")
+	set guioptions-=T
+	set guifont=Courier_New:h13
+	colorscheme dracula
+endif
+
 
 " fix Python indent after open bracket
 let g:pyindent_open_paren = 'shiftwidth()'
@@ -69,14 +75,6 @@ let NERDTreeWinSize=50
 
 " set tags=D:\work\miscella\startags\tags
 command -nargs=1 LookUp vimgrep! /<args>/j ./**/* | :botright copen
-
-" colorscheme molokai
-if has("gui_running")
-	colorscheme dracula
-	set guioptions-=T
-	set lines=60 columns=140
-	set guifont=Courier_New:h13
-endif
 
 " Key mappings
 nmap <F2> :bprevious<cr>
