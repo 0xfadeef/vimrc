@@ -31,7 +31,6 @@ set scrolloff=5
 set nostartofline
 
 set hidden
-set mouse=a
 
 set nobackup writebackup
 set swapfile
@@ -45,6 +44,7 @@ set fileencodings=utf-8,cp1251
 
 
 if has("gui_running")
+	set mouse=nvi
 	set guioptions-=T
 	set guifont=Courier_New:h13
 	colorscheme dracula
