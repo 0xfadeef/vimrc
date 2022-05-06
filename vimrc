@@ -1,5 +1,4 @@
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
 
 " autocmd BufRead * execute "chdir ".escape(expand("%:p:h"), ' ')
 " set autochdir
