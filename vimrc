@@ -50,6 +50,15 @@ if has("gui_running")
 endif
 
 
+if has("autocmd")
+	" Restore cursor position upon reopening files
+	autocmd BufReadPost *
+	  \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' |
+	  \     exe "normal! g`\"" |
+	  \ endif
+endif
+
+
 " fix Python indent after open bracket
 let g:pyindent_open_paren = 'shiftwidth()'
 
