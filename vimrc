@@ -4,7 +4,7 @@ set nocompatible
 " set autochdir
 
 syntax on
-filetype on
+filetype plugin indent on
 
 set tabstop=4 shiftwidth=4
 set expandtab
