@@ -7,7 +7,6 @@ syntax on
 filetype plugin indent on
 
 set tabstop=4 shiftwidth=4
-set expandtab
 
 " show tabs
 set list listchars=trail:.,tab:>\ 
