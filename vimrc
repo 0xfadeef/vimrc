@@ -83,14 +83,18 @@ let NERDTreeWinSize=50
 " set tags=D:\work\miscella\startags\tags
 command -nargs=1 LookUp vimgrep! /<args>/j ./**/* | :botright copen
 
+
 " Key mappings
+" use default leader key for my mappings
+let mapleader = '\'
+
+nmap <leader>c :nohlsearch<CR>
+
 nmap <F2> :bprevious<cr>
 nmap <F3> :bnext<cr>
 nmap <F4> :buffers<cr>
 nmap <F5> :TlistToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
-nmap <F8> :nohlsearch<cr>
-"nmap <F10> :TlistClose<cr> :NERDTreeClose<cr> :bd<cr> :TlistOpen<cr> :NERDTree<cr>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
