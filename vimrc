@@ -9,7 +9,7 @@ filetype plugin indent on
 set tabstop=4 shiftwidth=4
 
 " show tabs
-set list listchars=trail:.,tab:>\ 
+set list listchars=trail:.,tab:.\ 
 
 set title
 set ruler
