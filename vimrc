@@ -88,7 +88,8 @@ command -nargs=1 LookUp vimgrep! /<args>/j ./**/* | :botright copen
 " use default leader key for my mappings
 let mapleader = '\'
 
-nmap <leader>c :nohlsearch<CR>
+" Based on https://stackoverflow.com/a/26504944/7961781
+nmap <silent> <leader>a :let v:hlsearch=(&hls && !v:hlsearch)<CR>
 
 nmap <F2> :bprevious<cr>
 nmap <F3> :bnext<cr>
