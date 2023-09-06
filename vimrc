@@ -90,12 +90,12 @@ let mapleader = '\'
 
 " Based on https://stackoverflow.com/a/26504944/7961781
 nmap <silent> <leader>a :let v:hlsearch=(&hls && !v:hlsearch)<CR>
+nmap <C-Q> :NERDTreeToggle<CR>
 
 nmap <F2> :bprevious<cr>
 nmap <F3> :bnext<cr>
 nmap <F4> :buffers<cr>
 nmap <F5> :TlistToggle<cr>
-nmap <F6> :NERDTreeToggle<cr>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
