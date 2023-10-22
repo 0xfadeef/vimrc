@@ -38,12 +38,13 @@ set hlsearch incsearch
 
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
-"set fileformats=dos
+
+" no-op if run from terminal
+set guioptions-=T
+set guifont=Courier_New:h13
 
 
 if has("gui_running")
-	set guioptions-=T
-	set guifont=Courier_New:h13
 	colorscheme dracula
 endif
 
