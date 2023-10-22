@@ -42,7 +42,6 @@ set fileencodings=utf-8,cp1251
 
 
 if has("gui_running")
-	set mouse=nvi
 	set guioptions-=T
 	set guifont=Courier_New:h13
 	colorscheme dracula
