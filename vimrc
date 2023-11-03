@@ -75,10 +75,11 @@ let g:showmarks_ignore_type="mpq"
 "let Tlist_Exit_OnlyWindow=1
 " let Tlist_Show_One_File=1
 
+
 " NERDTree
-let NERDChristmasTree=0
-let NERDTreeWinPos="right"
-let NERDTreeWinSize=50
+let NERDTreeWinPos = "right"
+let NERDTreeWinSize = 31
+
 
 " set tags=D:\work\miscella\startags\tags
 command -nargs=1 LookUp vimgrep! /<args>/j ./**/* | :botright copen
