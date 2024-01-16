@@ -44,17 +44,16 @@ set guioptions-=T
 set guifont=Courier_New:h13
 
 
-if has("gui_running")
-	colorscheme dracula
-endif
-
-
 if has("autocmd")
 	" Restore cursor position upon reopening files
 	autocmd BufReadPost *
 	  \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' |
 	  \     exe "normal! g`\"" |
 	  \ endif
+endif
+
+if has("gui_running")
+	colorscheme dracula
 endif
 
 
