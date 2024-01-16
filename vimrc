@@ -50,6 +50,10 @@ if has("autocmd")
 	  \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' |
 	  \     exe "normal! g`\"" |
 	  \ endif
+
+	" Use subtle gray highlighting for listchar tabs
+	autocmd ColorScheme dracula
+	  \ highlight! link SpecialKey DraculaSubtle
 endif
 
 if has("gui_running")
