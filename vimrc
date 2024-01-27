@@ -75,16 +75,6 @@ let g:buftabline_numbers = 1
 let g:buftabline_separators = 1
 
 
-" /* I don't use ctags on mac */
-" taglist
-" let Tlist_Ctags_Cmd='"D:\Program Files\ctags58\ctags.exe"'
-" let Tlist_Auto_Open=1
-" let Tlist_Display_Tag_Scope=0
-" let Tlist_Enable_Fold_Column=0
-"let Tlist_Exit_OnlyWindow=1
-" let Tlist_Show_One_File=1
-
-
 " NERDTree
 let NERDTreeWinPos = "right"
 let NERDTreeWinSize = 31
