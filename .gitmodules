@@ -4,3 +4,6 @@
 [submodule "pack/dist/start/dracula"]
 	path = pack/dist/start/dracula
 	url = https://github.com/dracula/vim.git
+[submodule "pack/dist/start/buftabline"]
+	path = pack/dist/start/buftabline
+	url = https://github.com/ap/vim-buftabline.git
