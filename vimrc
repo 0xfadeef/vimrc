@@ -43,6 +43,9 @@ set fileencodings=utf-8,cp1251
 set guioptions-=T
 set guifont=Courier_New:h13
 
+" search upwards, stop in home dir
+set tags+=./tags;~
+
 
 if has("autocmd")
 	" Restore cursor position upon reopening files
@@ -80,7 +83,6 @@ let NERDTreeWinPos = "right"
 let NERDTreeWinSize = 31
 
 
-" set tags=D:\work\miscella\startags\tags
 command -nargs=1 LookUp vimgrep! /<args>/j ./**/* | :botright copen
 
 
