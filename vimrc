@@ -69,6 +69,12 @@ let g:pyindent_open_paren = 'shiftwidth()'
 let g:showmarks_ignore_type="mpq"
 
 
+" vim-buftabline config
+let g:buftabline_show = 1
+let g:buftabline_numbers = 1
+let g:buftabline_separators = 1
+
+
 " /* I don't use ctags on mac */
 " taglist
 " let Tlist_Ctags_Cmd='"D:\Program Files\ctags58\ctags.exe"'
