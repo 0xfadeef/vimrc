@@ -81,6 +81,7 @@ let g:buftabline_separators = 1
 " NERDTree
 let NERDTreeWinPos = "right"
 let NERDTreeWinSize = 31
+let NERDTreeQuitOnOpen = 3
 
 
 command -nargs=1 LookUp vimgrep! /<args>/j ./**/* | :botright copen
