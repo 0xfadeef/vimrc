@@ -97,8 +97,6 @@ nmap <C-Q> :NERDTreeToggle<CR>
 
 nmap <F2> :bprevious<cr>
 nmap <F3> :bnext<cr>
-nmap <F4> :buffers<cr>
-nmap <F5> :TlistToggle<cr>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
