@@ -76,6 +76,7 @@ let g:showmarks_ignore_type="mpq"
 let g:buftabline_show = 1
 let g:buftabline_numbers = 1
 let g:buftabline_separators = 1
+let g:buftabline_indicators = 1
 
 
 " NERDTree
