@@ -96,8 +96,8 @@ let mapleader = '\'
 nmap <silent> <leader>a :let v:hlsearch=(&hls && !v:hlsearch)<CR>
 nmap <C-Q> :NERDTreeToggle<CR>
 
-nmap <F2> :bprevious<cr>
-nmap <F3> :bnext<cr>
+nmap <F1> :bprevious<CR>
+nmap <F2> :bnext<CR>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
