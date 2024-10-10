@@ -1,33 +1,28 @@
 set nocompatible
 
-" autocmd BufRead * execute "chdir ".escape(expand("%:p:h"), ' ')
-" set autochdir
-
 syntax on
 filetype plugin indent on
 
 set tabstop=4 shiftwidth=4
-
-" show tabs
 set list listchars=trail:.,tab:.\ 
 
+" appearance
 set title
 set ruler
 set number
 set showcmd cmdheight=2
 set wildmenu
-set confirm
 
 set history=200
 set undolevels=1000
 
-" linebreak is no-op if nowrap
 set nowrap linebreak
 set whichwrap=[,]
 set backspace=indent,eol,start
 set scrolloff=5
 set nostartofline
 
+set confirm
 set hidden
 
 set nobackup writebackup
@@ -39,11 +34,11 @@ set hlsearch incsearch
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
 
-" no-op if run from terminal
 set guioptions-=T
 set guifont=Courier_New:h13
 
-" search upwards, stop in home dir
+" tags
+" search upwards, stop in home directory.
 set tags+=./tags;~
 set wildignore+=tags
 
