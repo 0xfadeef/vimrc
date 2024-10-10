@@ -45,6 +45,7 @@ set guifont=Courier_New:h13
 
 " search upwards, stop in home dir
 set tags+=./tags;~
+set wildignore+=tags
 
 
 if has("autocmd")
