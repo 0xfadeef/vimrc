@@ -3,9 +3,6 @@ set nocompatible
 syntax on
 filetype plugin indent on
 
-set tabstop=4 shiftwidth=4
-set list listchars=trail:.,tab:.\ 
-
 " appearance
 set title
 set ruler
@@ -14,9 +11,17 @@ setlocal cursorline
 setlocal cursorlineopt=number
 set showcmd cmdheight=2
 set wildmenu
+set hlsearch
+
+" gui options (no-op if in terminal)
+set guioptions-=T
+set guifont=Courier_New:h13
 
 set history=200
 set undolevels=1000
+
+set tabstop=4 shiftwidth=4
+set list listchars=trail:.,tab:.\ 
 
 " linebreak is no-op if nowrap
 set nowrap linebreak
@@ -32,14 +37,10 @@ set nobackup writebackup
 set swapfile
 set noundofile
 
-set hlsearch incsearch
+set incsearch
 
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
-
-" no-op if run from terminal
-set guioptions-=T
-set guifont=Courier_New:h13
 
 " search upwards, stop in home dir
 set tags+=./tags;~
