@@ -10,6 +10,8 @@ set list listchars=trail:.,tab:.\
 set title
 set ruler
 set number
+setlocal cursorline
+setlocal cursorlineopt=number
 set showcmd cmdheight=2
 set wildmenu
 
