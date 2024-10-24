@@ -47,12 +47,18 @@ set tags+=./tags;~
 set wildignore+=tags
 
 
+" :help restore-cursor
+function! s:RestoreCursor()
+	let line = line("'\"")
+	if 1 < line && line <= line("$") && &filetype !~# "commit"
+		normal! g'"
+	endif
+endfun
+
+
 if has("autocmd")
 	" Restore cursor position upon reopening files
-	autocmd BufReadPost *
-	  \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' |
-	  \     exe "normal! g`\"" |
-	  \ endif
+	autocmd BufReadPost * call s:RestoreCursor()
 
 	" Use subtle gray highlighting for listchar tabs
 	autocmd ColorScheme dracula
