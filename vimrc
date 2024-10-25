@@ -65,6 +65,11 @@ if has("autocmd") && !exists("autocommands_loaded")
 	" Use subtle gray highlighting for listchar tabs
 	autocmd ColorScheme dracula
 	  \ highlight! link SpecialKey DraculaSubtle
+
+	" Swap highlinghting for current and active buffers
+	autocmd ColorScheme *
+	  \ highlight! link BufTabLineCurrent PmenuSel |
+	  \ highlight! link BufTabLineActive  TabLineSel
 endif
 
 if has("gui_running")
