@@ -17,14 +17,17 @@ set hlsearch
 set guioptions-=T
 set guifont=Courier_New:h13
 
+" text display
+set tabstop=4
+set list listchars=trail:.,tab:.\ 
+set nowrap linebreak
+
 set history=200
 set undolevels=1000
 
-set tabstop=4 shiftwidth=4
-set list listchars=trail:.,tab:.\ 
+set shiftwidth=4
 
 " linebreak is no-op if nowrap
-set nowrap linebreak
 set whichwrap=[,]
 set backspace=indent,eol,start
 set scrolloff=5
