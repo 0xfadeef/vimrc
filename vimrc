@@ -56,7 +56,9 @@ function! s:RestoreCursor()
 endfun
 
 
-if has("autocmd")
+if has("autocmd") && !exists("autocommands_loaded")
+	let autocommands_loaded = 1
+
 	" Restore cursor position upon reopening files
 	autocmd BufReadPost * call s:RestoreCursor()
 
