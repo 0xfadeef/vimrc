@@ -58,6 +58,12 @@ function! s:RestoreCursor()
 	endif
 endfun
 
+function! s:ToggleQuickfix()
+	let wininfo = getwininfo()
+	let qf_list = filter(wininfo, "v:val.quickfix && !v:val.loclist")
+	execute empty(qf_list) ? "copen" : "cclose"
+endfun
+
 
 if has("autocmd") && !exists("autocommands_loaded")
 	let autocommands_loaded = 1
@@ -111,6 +117,7 @@ let mapleader = '\'
 " Based on https://stackoverflow.com/a/26504944/7961781
 nmap <silent> <leader>a :let v:hlsearch=(&hls && !v:hlsearch)<CR>
 nmap          <leader>e :NERDTreeToggle<CR>
+nmap          <leader>c :call ToggleQuickfix()<CR>
 
 nmap <F1> :bprevious<CR>
 nmap <F2> :bnext<CR>
