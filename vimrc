@@ -110,7 +110,7 @@ let mapleader = '\'
 
 " Based on https://stackoverflow.com/a/26504944/7961781
 nmap <silent> <leader>a :let v:hlsearch=(&hls && !v:hlsearch)<CR>
-nmap <C-Q> :NERDTreeToggle<CR>
+nmap          <leader>e :NERDTreeToggle<CR>
 
 nmap <F1> :bprevious<CR>
 nmap <F2> :bnext<CR>
