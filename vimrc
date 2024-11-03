@@ -11,7 +11,6 @@ setlocal cursorline
 setlocal cursorlineopt=number
 set showcmd cmdheight=2
 set wildmenu
-set hlsearch
 
 " gui options (no-op if in terminal)
 set guioptions-=T
@@ -22,12 +21,16 @@ set tabstop=4
 set list listchars=trail:.,tab:.\ 
 set nowrap linebreak
 
+" text search
+set hlsearch
+set incsearch
+
+" history
 set history=200
 set undolevels=1000
 
+" keystroke behaviors
 set shiftwidth=4
-
-" linebreak is no-op if nowrap
 set whichwrap=[,]
 set backspace=indent,eol,start
 set scrolloff=5
@@ -39,8 +42,6 @@ set hidden
 set nobackup writebackup
 set swapfile
 set noundofile
-
-set incsearch
 
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
