@@ -14,7 +14,7 @@ set wildmenu
 
 " gui options (no-op if in terminal)
 set guioptions-=T
-set guifont=Courier_New:h13
+set guifont=Courier_New:h12
 
 " text display
 set tabstop=4
