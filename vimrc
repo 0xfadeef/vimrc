@@ -61,7 +61,7 @@ endfun
 
 function! s:ToggleQuickfix()
 	let winid = getqflist({"winid": 0}).winid
-	execute winid ? "cclose" : "copen"
+	execute winid ? "cclose" : "botright copen"
 endfun
 
 
