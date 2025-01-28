@@ -60,9 +60,8 @@ function! s:RestoreCursor()
 endfun
 
 function! s:ToggleQuickfix()
-	let wininfo = getwininfo()
-	let qf_list = filter(wininfo, "v:val.quickfix && !v:val.loclist")
-	execute empty(qf_list) ? "copen" : "cclose"
+	let winid = getqflist({"winid": 0}).winid
+	execute winid ? "cclose" : "copen"
 endfun
 
 
