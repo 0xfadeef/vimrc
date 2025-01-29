@@ -121,6 +121,7 @@ nmap          <leader>c :call <SID>ToggleQuickfix()<CR>
 
 nmap <F1> :bprevious<CR>
 nmap <F2> :bnext<CR>
+nmap <F3> <Cmd>execute (v:count ? v:count.."buffer" : "buffers")<CR>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
