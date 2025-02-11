@@ -124,4 +124,7 @@ nmap <F3> <Cmd>execute (v:count ? v:count.."buffer" : "buffers")<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+" :help put-Visual-mode
+" don't put selection into register when paste in visual mode
+vnoremap p P
 
