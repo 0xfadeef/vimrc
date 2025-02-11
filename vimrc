@@ -127,4 +127,5 @@ vnoremap K :m '<-2<CR>gv=gv
 " :help put-Visual-mode
 " don't put selection into register when paste in visual mode
 vnoremap p P
+vnoremap $ $h
 
