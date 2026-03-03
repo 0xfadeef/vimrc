@@ -7,3 +7,6 @@
 [submodule "pack/dist/start/buftabline"]
 	path = pack/dist/start/buftabline
 	url = https://github.com/ap/vim-buftabline.git
+[submodule "pack/dist/start/vim-grepper"]
+	path = pack/dist/start/vim-grepper
+	url = https://github.com/mhinz/vim-grepper.git
