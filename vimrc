@@ -63,9 +63,8 @@ function! s:ToggleQuickfix()
 endfun
 
 
-if has("autocmd") && !exists("autocommands_loaded")
-	let autocommands_loaded = 1
-
+augroup vimrc
+	autocmd!
 	" Restore cursor position upon reopening files
 	autocmd BufReadPost * call s:RestoreCursor()
 
@@ -77,7 +76,8 @@ if has("autocmd") && !exists("autocommands_loaded")
 	autocmd ColorScheme *
 	  \ highlight! link BufTabLineCurrent PmenuSel |
 	  \ highlight! link BufTabLineActive  TabLineSel
-endif
+augroup end
+
 
 if has("gui_running")
 	colorscheme dracula
